@@ -5,7 +5,9 @@ import "fmt"
 const (
 	//GENERAL
 	Success              = "00"
+	Failed               = "01"
 	InternalServiceError = "50"
+	RequestTimeOut       = "68"
 
 	//AUTHORIZATION
 	InvalidAuthHeader     = "11"
@@ -30,6 +32,7 @@ var ResponseMessage = map[string]string{
 	//GENERAL
 	Success:              fmt.Sprintf("[%s] %s", "Transaksi Berhasil!"),
 	InternalServiceError: fmt.Sprintf("[%s] %s", InternalServiceError, "Internal service error"),
+	RequestTimeOut:       fmt.Sprintf("[%s] %s", RequestTimeOut, "Request timeout."),
 
 	//AUTHORIZATION
 	InvalidAuthHeader:     fmt.Sprintf("[%s] %s", InvalidAuthHeader, "Invalid authorization header"),
