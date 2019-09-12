@@ -31,7 +31,7 @@ const (
 
 var ResponseMessage = map[string]string{
 	//GENERAL
-	Success:              fmt.Sprintf("[%s] %s", "Transaksi Berhasil!"),
+	Success:              fmt.Sprintf("[%s] %s", Success, "Transaksi Berhasil!"),
 	InternalServiceError: fmt.Sprintf("[%s] %s", InternalServiceError, "Internal service error"),
 	RequestTimeOut:       fmt.Sprintf("[%s] %s", RequestTimeOut, "Request timeout."),
 	TemporaryUnavailable: fmt.Sprintf("[%s] %s", TemporaryUnavailable, "Service temporarily unavailable."),
